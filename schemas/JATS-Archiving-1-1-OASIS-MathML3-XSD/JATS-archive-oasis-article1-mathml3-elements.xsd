@@ -419,6 +419,7 @@
          <xsd:group ref="article-version-model"/>
          <xsd:attribute name="id" use="optional" type="xsd:ID"/>
          <xsd:attribute ref="xml:base" use="optional"/>
+         <xsd:attribute name="content-type" use="optional" type="xsd:string"/>
          <xsd:attribute name="article-version-type">
             <xsd:simpleType>
                <xsd:restriction base="xsd:NMTOKEN">

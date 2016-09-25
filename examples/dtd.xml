@@ -4,7 +4,7 @@
     <front>
         <article-meta>
             <article-id pub-id-type="doi">10.0000/example</article-id>
-            <article-version article-version-type="version-of-record">
+            <article-version article-version-type="version-of-record" content-type="example" id="av">
                 <date></date>
                 <contrib></contrib>
                 <contrib></contrib>
