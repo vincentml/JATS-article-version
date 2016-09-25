@@ -407,6 +407,43 @@
          <xsd:attribute ref="xml:base" use="optional"/>
       </xsd:complexType>
    </xsd:element>
+   <xsd:element name="article-version">
+      <xsd:annotation>
+         <xsd:documentation>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+               <h3>Article Version</h3>
+            </div>
+         </xsd:documentation>
+      </xsd:annotation>
+      <xsd:complexType>
+         <xsd:group ref="article-version-model"/>
+         <xsd:attribute name="id" use="optional" type="xsd:ID"/>
+         <xsd:attribute ref="xml:base" use="optional"/>
+         <xsd:attribute name="article-version-type">
+            <xsd:simpleType>
+               <xsd:restriction base="xsd:NMTOKEN">
+                  <xsd:enumeration value="authors-original"/>
+                  <xsd:enumeration value="submitted-manuscript-under-review"/>
+                  <xsd:enumeration value="accepted-manuscript"/>
+                  <xsd:enumeration value="copy-edited-manuscript"/>
+                  <xsd:enumeration value="proof"/>
+                  <xsd:enumeration value="revised-proof"/>
+                  <xsd:enumeration value="version-of-record"/>
+                  <xsd:enumeration value="digitized-version-of-record"/>
+                  <xsd:enumeration value="corrected-version-of-record"/>
+                  <xsd:enumeration value="enhanced-version-of-record"/>
+               </xsd:restriction>
+            </xsd:simpleType>
+         </xsd:attribute>
+      </xsd:complexType>
+   </xsd:element>
+   <xsd:group name="article-version-model">
+      <xsd:sequence>
+         <xsd:element ref="date" minOccurs="0" maxOccurs="1"/>
+         <xsd:element ref="contrib" minOccurs="0" maxOccurs="unbounded"/>
+         <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+   </xsd:group>
    <xsd:element name="article-meta">
       <xsd:annotation>
          <xsd:documentation>
@@ -6338,6 +6375,7 @@
    <xsd:group name="article-meta-model">
       <xsd:sequence>
          <xsd:element ref="article-id" minOccurs="0" maxOccurs="unbounded"/>
+         <xsd:element ref="article-version" minOccurs="0" maxOccurs="1"/>
          <xsd:element ref="article-categories" minOccurs="0"/>
          <xsd:element ref="title-group" minOccurs="0"/>
          <xsd:choice minOccurs="0" maxOccurs="unbounded">
