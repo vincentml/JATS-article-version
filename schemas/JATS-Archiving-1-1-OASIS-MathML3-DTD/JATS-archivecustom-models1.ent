@@ -1089,7 +1089,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    Content model for the metadata that is
                         specific to the article.                   -->
 <!ENTITY % article-meta-model
-                        "(article-id*, article-categories?,
+                        "(article-id*, article-version?, article-categories?,
                          title-group?,
                          (%contrib-group.class; |
                           %aff-alternatives.class; | %x.class;)*,

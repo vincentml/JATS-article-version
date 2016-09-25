@@ -476,6 +476,27 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         CDATA                             #IMPLIED"  >
 
 
+<!--                    ARTICLE VERSION ATTRIBUTES                 -->
+<!--                    Attributes for the <article-version> element -->
+<!ENTITY % article-version-atts
+            "%jats-common-atts;                                       
+             content-type
+                       CDATA                              #IMPLIED
+             article-version-type (
+                    authors-original
+                    | submitted-manuscript-under-review
+                    | accepted-manuscript
+                    | copy-edited-manuscript
+                    | proof
+                    | revised-proof
+                    | version-of-record
+                    | digitized-version-of-record
+                    | corrected-version-of-record
+                    | enhanced-version-of-record             
+             ) #REQUIRED
+">
+
+
 <!--                    COMPOUND KEYWORD ATTRIBUTES                -->
 <!--                    Attributes for the <compound-kwd> element
                                                                    -->
@@ -797,7 +818,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         element, which names the journal article
                         metadata                                   -->
 <!ENTITY % article-meta-model
-                       "(article-id*, article-categories?,
+                       "(article-id*, article-version?, article-categories?,
                          title-group?,
                          (%contrib-group.class; |
                           %aff-alternatives.class;)*,
@@ -885,6 +906,15 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ELEMENT  article-id   (#PCDATA)                                    >
 <!ATTLIST  article-id
              %article-id-atts;                                       >
+
+
+<!--                    ARTICLE VERSION                            -->
+
+<!ENTITY % article-version-model
+                       "(date*, contrib*, p*)" >
+
+<!ELEMENT article-version %article-version-model; >
+<!ATTLIST article-version %article-version-atts;  >
 
 
 <!-- ============================================================= -->
