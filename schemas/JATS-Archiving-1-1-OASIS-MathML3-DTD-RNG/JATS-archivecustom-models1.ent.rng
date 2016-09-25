@@ -1345,6 +1345,9 @@
       <ref name="article-id"/>
     </zeroOrMore>
     <optional>
+      <ref name="article-version"/>
+    </optional>
+    <optional>
       <ref name="article-categories"/>
     </optional>
     <optional>

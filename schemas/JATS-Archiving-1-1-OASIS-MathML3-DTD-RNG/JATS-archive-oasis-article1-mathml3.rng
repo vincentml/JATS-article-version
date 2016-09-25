@@ -28,6 +28,7 @@
   <include href="JATS-XHTMLtablesetup1.ent.rng"/>
   <include href="JATS-oasis-tablesetup1.ent.rng"/>
   <include href="JATS-chars1.ent.rng"/>
+  <include href="JATS-article-version.ent.rng"/>
   <define name="dtd-version">
     <optional>
       <attribute name="dtd-version" a:defaultValue="1.1">

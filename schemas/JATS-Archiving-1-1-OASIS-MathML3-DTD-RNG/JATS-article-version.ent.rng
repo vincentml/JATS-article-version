@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+    xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    
+    <define name="article-version">
+        <element name="article-version">
+            <attribute name="article-version-type">
+                <choice>
+                    <value>authors-original</value>
+                    <value>submitted-manuscript-under-review</value>
+                    <value>accepted-manuscript</value>
+                    <value>copy-edited-manuscript</value>
+                    <value>proof</value>
+                    <value>revised-proof</value>
+                    <value>version-of-record</value>
+                    <value>digitized-version-of-record</value>
+                    <value>corrected-version-of-record</value>
+                    <value>enhanced-version-of-record</value>
+                </choice>
+            </attribute>
+            <optional>
+                <attribute name="content-type"/>
+            </optional>
+            <ref name="jats-common-atts"/>
+            <optional>
+                <ref name="date"/>
+            </optional>
+            <zeroOrMore>
+                <ref name="contrib"/>
+            </zeroOrMore>
+            <zeroOrMore>
+                <ref name="p"/>
+            </zeroOrMore>
+        </element>
+    </define>
+
+</grammar>
