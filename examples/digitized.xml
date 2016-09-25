@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article SYSTEM "../schemas/JATS-Archiving-1-1-OASIS-MathML3-DTD/JATS-archive-oasis-article1-mathml3.dtd">
+<article>
+    <front>
+        <article-meta>
+            <article-id pub-id-type="doi">10.0000/example</article-id>
+            <article-version article-version-type="digitized-version-of-record" content-type="header">
+                <date>
+                    <day>25</day>
+                    <month>9</month>
+                    <year>2016</year>
+                </date>
+                <contrib contrib-type="vendor">
+                    <collab>Scan and Tag Inc.</collab>
+                </contrib>
+                <p>Scanned from hardcopy to OCR'd PDF with XML metadata and references</p>
+            </article-version>
+        </article-meta>
+    </front>
+</article>

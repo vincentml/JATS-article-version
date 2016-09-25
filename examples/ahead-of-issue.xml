@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article SYSTEM "../schemas/JATS-Archiving-1-1-OASIS-MathML3-DTD/JATS-archive-oasis-article1-mathml3.dtd">
+<article>
+    <front>
+        <article-meta>
+            <article-id pub-id-type="doi">10.0000/example</article-id>
+            <article-version article-version-type="version-of-record"/>
+            <volume>0</volume>
+            <issue>0</issue>
+        </article-meta>
+    </front>
+</article>

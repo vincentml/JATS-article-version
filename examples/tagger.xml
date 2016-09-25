@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article SYSTEM "../schemas/JATS-Archiving-1-1-OASIS-MathML3-DTD/JATS-archive-oasis-article1-mathml3.dtd">
+<article>
+    <front>
+        <article-meta>
+            <article-id pub-id-type="doi">10.0000/example</article-id>
+            <article-version article-version-type="proof">
+                <contrib contrib-type="typesetter">
+                    <collab>Quality Typesetting LLC</collab>
+                </contrib>
+            </article-version>
+        </article-meta>
+    </front>
+</article>

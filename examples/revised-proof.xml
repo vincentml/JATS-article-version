@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article SYSTEM "../schemas/JATS-Archiving-1-1-OASIS-MathML3-DTD/JATS-archive-oasis-article1-mathml3.dtd">
+<article>
+    <front>
+        <article-meta>
+            <article-id pub-id-type="doi">10.0000/example</article-id>
+            <article-version article-version-type="revised-proof">
+                <date iso-8601-date="2016-09-24T11:01:55.779-04:00"/>
+                <contrib contrib-type="production-editor">
+                    <name>
+                        <surname>Hune</surname>
+                        <given-names>Arabelle</given-names>
+                    </name>
+                    <aff>Academic Publisher</aff>
+                </contrib>
+                <p>Incorporated changes communicated by the author</p>
+            </article-version>
+        </article-meta>
+    </front>
+</article>
