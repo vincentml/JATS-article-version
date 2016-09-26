@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../schemas/JATS-Archiving-1-1-OASIS-MathML3-DTD-RNG/JATS-archive-oasis-article1-mathml3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE article SYSTEM "../schemas/JATS-Archiving-1-1-OASIS-MathML3-DTD/JATS-archive-oasis-article1-mathml3.dtd">
 <article>
     <front>
         <article-meta>
             <article-id pub-id-type="doi">10.0000/example</article-id>
             <article-version article-version-type="version-of-record" content-type="example" id="av">
-                <date></date>
-                <contrib></contrib>
-                <contrib></contrib>
-                <p></p>
-                <p></p>
+                <article-version article-version-type="revised-proof">
+                    <date></date>
+                </article-version>
+                <article-version article-version-type="proof">
+                    <date></date>
+                    <contrib></contrib>
+                </article-version>
             </article-version>
             <title-group>
                 <article-title></article-title>
