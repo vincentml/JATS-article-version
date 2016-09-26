@@ -24,15 +24,24 @@
                 <attribute name="content-type"/>
             </optional>
             <ref name="jats-common-atts"/>
-            <optional>
-                <ref name="date"/>
-            </optional>
-            <zeroOrMore>
-                <ref name="contrib"/>
-            </zeroOrMore>
-            <zeroOrMore>
-                <ref name="p"/>
-            </zeroOrMore>
+            <choice>
+                <group>
+                    <optional>
+                        <ref name="date"/>
+                    </optional>
+                    <zeroOrMore>
+                        <ref name="contrib"/>
+                    </zeroOrMore>
+                    <zeroOrMore>
+                        <ref name="p"/>
+                    </zeroOrMore>
+                </group>
+                <group>
+                    <zeroOrMore>
+                        <ref name="article-version"/>
+                    </zeroOrMore>
+                </group>
+            </choice>
         </element>
     </define>
 

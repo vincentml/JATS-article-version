@@ -439,11 +439,14 @@
       </xsd:complexType>
    </xsd:element>
    <xsd:group name="article-version-model">
-      <xsd:sequence>
-         <xsd:element ref="date" minOccurs="0" maxOccurs="1"/>
-         <xsd:element ref="contrib" minOccurs="0" maxOccurs="unbounded"/>
-         <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded"/>
-      </xsd:sequence>
+      <xsd:choice>
+         <xsd:sequence>
+            <xsd:element ref="date" minOccurs="0" maxOccurs="1"/>
+            <xsd:element ref="contrib" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded"/>
+         </xsd:sequence>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" ref="article-version"/>
+      </xsd:choice>
    </xsd:group>
    <xsd:element name="article-meta">
       <xsd:annotation>
