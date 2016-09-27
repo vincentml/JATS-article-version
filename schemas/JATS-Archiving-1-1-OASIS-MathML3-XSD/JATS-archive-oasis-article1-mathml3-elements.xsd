@@ -423,6 +423,7 @@
          <xsd:attribute name="article-version-type" use="required">
             <xsd:simpleType>
                <xsd:restriction base="xsd:NMTOKEN">
+                  <xsd:enumeration value="preprint"/>
                   <xsd:enumeration value="authors-original"/>
                   <xsd:enumeration value="submitted-manuscript-under-review"/>
                   <xsd:enumeration value="accepted-manuscript"/>

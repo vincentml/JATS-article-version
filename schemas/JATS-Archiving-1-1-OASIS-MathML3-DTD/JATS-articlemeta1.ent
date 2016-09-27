@@ -483,7 +483,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
              content-type
                        CDATA                              #IMPLIED
              article-version-type (
-                    authors-original
+                    preprint
+                    | authors-original
                     | submitted-manuscript-under-review
                     | accepted-manuscript
                     | copy-edited-manuscript
