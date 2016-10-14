@@ -912,7 +912,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    ARTICLE VERSION                            -->
 
 <!ENTITY % article-version-model
-                       "((date?, contrib*, p*) | article-version*)" >
+                       "((date?, contrib*, p*, self-uri*) | article-version*)" >
 
 <!ELEMENT article-version %article-version-model; >
 <!ATTLIST article-version %article-version-atts;  >

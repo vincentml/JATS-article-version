@@ -36,6 +36,9 @@
                     <zeroOrMore>
                         <ref name="p"/>
                     </zeroOrMore>
+                    <zeroOrMore>
+                        <ref name="self-uri"/>
+                    </zeroOrMore>
                 </group>
                 <group>
                     <zeroOrMore>

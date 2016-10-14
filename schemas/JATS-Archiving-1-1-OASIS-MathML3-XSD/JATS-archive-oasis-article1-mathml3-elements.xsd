@@ -445,6 +445,7 @@
             <xsd:element ref="date" minOccurs="0" maxOccurs="1"/>
             <xsd:element ref="contrib" minOccurs="0" maxOccurs="unbounded"/>
             <xsd:element ref="p" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="self-uri" minOccurs="0" maxOccurs="unbounded"/>
          </xsd:sequence>
          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="article-version"/>
       </xsd:choice>
