@@ -24,6 +24,9 @@
             <optional>
                 <attribute name="content-type"/>
             </optional>
+            <optional>
+                <attribute name="specific-use"/>
+            </optional>
             <ref name="jats-common-atts"/>
             <choice>
                 <group>

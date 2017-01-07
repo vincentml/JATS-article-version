@@ -482,6 +482,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
             "%jats-common-atts;                                       
              content-type
                        CDATA                              #IMPLIED
+             specific-use
+                       CDATA                              #IMPLIED
              article-version-type (
                     preprint
                     | authors-original

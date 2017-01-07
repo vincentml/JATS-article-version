@@ -420,6 +420,7 @@
          <xsd:attribute name="id" use="optional" type="xsd:ID"/>
          <xsd:attribute ref="xml:base" use="optional"/>
          <xsd:attribute name="content-type" use="optional" type="xsd:string"/>
+         <xsd:attribute name="specific-use" use="optional" type="xsd:string"/>
          <xsd:attribute name="article-version-type" use="required">
             <xsd:simpleType>
                <xsd:restriction base="xsd:NMTOKEN">
